@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>
+            LBC
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script  src="Scripts/Newpage.js"></script>
+        <style>
+            #menubar{
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+				background-color: darkred;
+				overflow: hidden;
+			
+			}
+			li a:hover{
+				background-color: gold;
+				color: darkred;
+				
+			}
+			li{
+				float: right;
+			}
+			li a{
+				display: block;
+				color: gold;
+				text-align: center;
+				text-decoration: none;
+				padding:25px;
+            }
+            #content{
+                padding: 20px;
+            }
+            #top{
+                height:175px;
+            }
+            img{
+                height:165px;
+                float: left;
+                padding: 5px;
+            
+            }
+            .title{
+				height: 70px;
+				text-align: center; 
+				padding: 20px;
+			}
+            iframe{
+                border:none;
+                height: 700px;
+                width: 100%;
+
+            }
+            /*.stickty {
+                position: fixed;
+                top: 0px;
+                width: 100%;
+				color:blue;
+            }*/
+        </style>
+    
+    </head>
+    <body>
+        <div id ="top">
+             <img src= "images/logo1.png">
+            <p class="title" > SERVING CHRIST & OUR COMMUNITY IN THE SHADOW OF THE CROSS<br>
+                  THE LIGHTHOUSE BAPTIST CHURCH, BRONX <br>
+                 3721 White Plains Road, Bronx, NY 10467; Ph. (718) 652-6812<br></p>
+		</div>		
+        <ul id="menubar"> 
+            <li> <a onclick="Newpage ('History')">History</a> </li>
+            <li> <a onclick="Newpage ('Member')">Membership</a></li>
+            <li> <a onclick="Newpage ('index')">Home</a></li>
+        </ul>	
+        <h1 align= "center">REQUIREMENTS FOR MEMBERSHIP</h1>
+        <iframe src= "member1.html" name="extra"></iframe>
+      
+        <script>
+            /*window.onscroll = function() {myFunction()};
+				
+				var header = document.getElementById("menubar");
+				var stickty = header.offsetTop;
+				
+				
+				function myFunction(){
+					//document.getElementById("menubar").classList.add("stickty");
+					if (window.pageYOffset > stickty) {
+					//alert("scrolling=" + window.pageYOffset)
+						document.getElementById("menubar").classList.add("stickty");
+					} else {
+						header.classList.remove("stickty");
+					}
+				}
+        </script>
+    </body>
+</html>

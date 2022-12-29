@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>
+		 LBC
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script  src="Scripts/Newpage.js"></script>
+		<style>
+			body{
+				/*background-color:darkred;*/
+				
+			}	
+			.toplogo{
+				height:175px;
+			}
+			ul.header{
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+				background-color: darkred;
+				overflow: hidden;
+			
+			}
+			li a:hover{
+				background-color: gold;
+				color: darkred;
+				
+			}
+			li{
+				float: right;
+				cursor: pointer;
+			}
+			li a{
+				display: block;
+				color: gold;
+				text-align: center;
+				text-decoration: none;
+				padding:25px;
+			}
+			button:hover{
+				background-color: gold;
+				color: darkred;
+			}
+			.content{
+				padding: 17px;
+			}
+			.stickty + .content{
+				padding-top: 100px;
+			}
+			.stickty{
+				position: fixed;
+				top:0;
+				width:100%;
+			}
+			img{
+				height:165px;
+				float: left;
+				padding: 5px;
+			}
+			.title{
+				height: 70px;
+				text-align: center; 
+				padding: 20px;
+			}
+			#par{
+				font-size: 19px;
+			}
+			#pad{
+				padding-top: 20px;
+			}
+		</style>
+	</head> 
+	<script src = "Scripts/Nextpage.js"></script>
+	<body>	
+		<div class= "toplogo">
+			<img src= "images/logo1.png">
+			<p class="title" > SERVING CIRIST & OUR COMMUNITY IN THE SHADOW OF THE CROSS<br>
+				 THE LIGHTHOUSE BAPTIST CHURCH, BRONX <br>
+				3721 White Plains Road, Bronx, NY 10467; Ph. (718) 652-6812<br></p>
+		</div>
+		<ul  class= "header" id= "myHeader">
+			<li> <a onclick="Newpage ('History')">History</a> </li>
+			<li> <a onclick="Newpage ('Member')">Membership</a></li>
+			<li> <a onclick="Newpage ('index')">Home</a></li>
+		</ul>
+		<div class= "content">
+			<h1 align= "center" id="pad"> Mission Statemtent</h1>
+			<p  align = "center" id="par">"SERVING CHRIST AND THE COMMUNITY IN THE SHADOW OF THE CROSS"</p>
+
+			<h2 align = "center" id="pad">Vision Statement</h2>
+			<p align= "center" id="par">Creating a gospel saturated environment, 
+			where we encourage the "lost" to come to faith in Christ and Christians to become increasingly more Christ-like</p>
+
+		</div>
+		<script>
+				window.onscroll = function() {myFunction()};
+				
+				var header = document.getElementById("myHeader");
+				var stickty = header.offsetTop;
+			
+				
+
+				function myFunction(){
+					if (window.pageYOffset > stickty) {
+						header.classList.add("sticky");
+					} else {
+						header.classList.remove("stickty");
+					}
+				} 
+		</script>
+	</body>
+	
+	
+</html>
