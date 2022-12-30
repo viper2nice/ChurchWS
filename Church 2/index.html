@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script  src="Scripts/Newpage.js"></script>
 		<!-- <link rel="stylesheet" href="index.css"> -->
+		<script src="https://kit.fontawesome.com/9a58e7f1cb.js" crossorigin="anonymous"></script>
 	</head> 
 	<style>
 		html,body{
@@ -19,7 +20,7 @@
 
 		.center_text{
 			position: absolute;
-			top: 40%;
+			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			font-size: 3.1pc;
@@ -29,20 +30,73 @@
 		.TopContainer{
 			position: relative;
 			/* text-align: center; */
-			color: white;
+			background-color: gray;
+			
 			
 		}
 
-	
+		.dropdown {
+		display: inline-block;
+		position: relative;
+		}
+
+		button{
+		border:none;
+		border-radius:5px;
+		padding:10px 20px;
+		font-size:18px;
+		cursor:pointer;
+		background-color: gray;
+		}
+
+		button:hover{
+		background-color:#ddd;
+		}
+
+		.dropdown-options {
+		display: none;
+		position: absolute;
+		overflow: auto;
+		background-color:#fff;
+		border-radius:5px;
+		box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+		}
+
+		.dropdown:hover .dropdown-options {
+		display: block;
+		}
+
+		.dropdown-options a {
+		display: block;
+		color: #000000;
+		padding: 5px;
+		text-decoration: none;
+		padding:20px 40px;
+		}
+
+		.dropdown-options a:hover {
+		color: #0a0a23;
+		background-color: #ddd;
+		border-radius:5px;
+		}
+
 	</style>
+
 	<body>
         <div class="TopContainer">
-			<div style="background-color: gray;">
-				<a style="float: right;" href=""> Facebook</a>
-				<a style="float: right;"href=""> Facebook</a>
-				<a style="float: right;"href=""> Facebook</a>
-				put a sdle meuw
+			<button style="float: right;"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></button>
+			<button style="float: right;"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></button>
+			<button style="float: right;"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></button>
+			<!-- this is the buttion wrap -->
+			<div class="dropdown">
+				<button> <i class="fa-solid fa-bars"></i></button>
+				<div class="dropdown-options">
+					<a href="">About</a>
+					<a href="">Contant</a>
+					<a href="">Membership</a>
+				</div>
 			</div>
+			<!-- end of div/botton wrap -->
 			<img width="100%" src="images/image.png">
             <center  class="center_text"> Welcome to <br>LightHouse bastice Church</center>
 
